@@ -316,7 +316,7 @@ prepare() {
 
     ### Use autooptimization
     if [ "$_use_auto_optimization" = "yes" ]; then
-        "${srcdir}"/auto-cpu-optimization.sh
+        #"${srcdir}"/auto-cpu-optimization.sh
     fi
 
     ### Selecting CachyOS config
