@@ -317,6 +317,8 @@ prepare() {
     ### Use autooptimization
     if [ "$_use_auto_optimization" = "yes" ]; then
         #"${srcdir}"/auto-cpu-optimization.sh
+        scripts/config -k --disable CONFIG_GENERIC_CPU
+        scripts/config -k --enable CONFIG_MZEN
     fi
 
     ### Selecting CachyOS config
